@@ -92,17 +92,29 @@
             </div>
         </div>
         
-        <!-- Mobile Menu -->
-        <div class="md:hidden hidden gradient-bg w-full absolute left-0 px-4 py-2 shadow-lg" id="mobile-menu">
-            <a href="#inicio" class="block py-2 hover:text-cream/80">Inicio</a>
-            <a href="#sobre-mi" class="block py-2 hover:text-cream/80">Sobre mí</a>
-            <a href="#areas" class="block py-2 hover:text-cream/80">Areas de Especialización</a>
-            <a href="#atencion" class="block py-2 hover:text-cream/80">Atención</a>
-            <a href="#formacion" class="block py-2 hover:text-cream/80">Formación Profesional</a>
+       <!-- Mobile Menu -->
+        <div class="md:hidden hidden gradient-bg w-full absolute left-0 top-full px-4 py-3 shadow-lg" id="mobile-menu">
+            <a href="#inicio" class="block py-2 hover:text-cream/80 border-b border-white/10">Inicio</a>
+            <a href="#sobre-mi" class="block py-2 hover:text-cream/80 border-b border-white/10">Sobre mí</a>
+            <a href="#areas" class="block py-2 hover:text-cream/80 border-b border-white/10">Áreas de Especialización</a>
+            <a href="#atencion" class="block py-2 hover:text-cream/80 border-b border-white/10">Atención</a>
+            <a href="#formacion" class="block py-2 hover:text-cream/80 border-b border-white/10">Formación Profesional</a>
             <a href="#contacto" class="block py-2 hover:text-cream/80">Contacto</a>
-        </div>
-    </header>
 
+            <!-- Script integrado exclusivo para el menú móvil -->
+            <script>
+                document.getElementById('menu-btn')?.addEventListener('click', function() {
+                    document.getElementById('mobile-menu').classList.toggle('hidden');
+                });
+                
+                document.querySelectorAll('#mobile-menu a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        document.getElementById('mobile-menu').classList.add('hidden');
+                    });
+                });
+            </script>
+        </div>
+        
     <!-- Hero Section -->
     <section id="inicio" class="gradient-bg text-white py-20">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
