@@ -65,7 +65,7 @@
             50% { transform: translateY(-10px); }
             100% { transform: translateY(0px); }
         }
-</style>
+    </style>
 </head>
 <body class="bg-cream text-gray-800 overflow-x-hidden w-full max-w-full">
     <!-- Header/Navbar Fijo -->
@@ -86,9 +86,9 @@
                     <a href="#formacion" class="hover:text-cream/80 transition">Formación</a>
                     <a href="#contacto" class="hover:text-cream/80 transition">Contacto</a>
                 </nav>
-               <button class="md:hidden text-2xl focus:outline-none cursor-pointer p-2" id="menu-btn" onclick="toggleMobileMenu()">
-    <i class="fas fa-bars"></i>
-</button>
+                <button class="md:hidden text-2xl focus:outline-none cursor-pointer p-2" id="menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
         
@@ -100,24 +100,11 @@
             <a href="#atencion" class="block py-2 hover:text-cream/80 border-b border-white/10">Atención</a>
             <a href="#formacion" class="block py-2 hover:text-cream/80 border-b border-white/10">Formación Profesional</a>
             <a href="#contacto" class="block py-2 hover:text-cream/80">Contacto</a>
-
-            <!-- Script integrado exclusivo para el menú móvil -->
-            <script>
-                document.getElementById('menu-btn')?.addEventListener('click', function() {
-                    document.getElementById('mobile-menu').classList.toggle('hidden');
-                });
-                
-                document.querySelectorAll('#mobile-menu a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        document.getElementById('mobile-menu').classList.add('hidden');
-                    });
-                });
-            </script>
         </div>
     </header>
     
     <!-- Hero Section -->
-    <section id="inicio" class="gradient-bg text-white py-20">
+    <section id="inicio" class="gradient-bg text-white py-20 mt-16">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Psic. Vanessa Gutiérrez</h1>
@@ -150,680 +137,365 @@ Ofrezco un espacio seguro, respetuoso y libre de juicios, adaptado a las necesid
     </section>
 
     <!-- Sobre Mí -->
-   <section id="sobre-mi" class="py-20 bg-cream">
-    <div class="container mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">
-                Sobre <span class="text-primary">Mí</span>
-            </h2>
-            <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
-            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-                Psicóloga Clínica con Diplomado en Tanatología
-            </h3>
-            <p class="text-gray-700 leading-relaxed text-lg mb-4">
-                Acompaño a mis pacientes en sus procesos de cambio y superación de duelos, ofreciendo un espacio seguro, empático y libre de juicios.
-            </p>
-            <p class="text-gray-700 leading-relaxed text-lg">
-                Mi trabajo se enfoca en identificar fortalezas y generar herramientas prácticas que permitan encontrar soluciones efectivas en el menor tiempo posible.
-            </p>
-        </div>
-
-        <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
-            
-            <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
-                <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center text-xl flex-shrink-0">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-accent text-lg mb-1">Educación</h4>
-                    <p class="text-gray-700 font-medium">Licenciada en Psicología</p>
-                    <p class="text-sm text-gray-600">CEU • 2017 – 2020</p>
-                </div>
-            </div>
-
-            <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
-                <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center text-xl flex-shrink-0">
-                    <i class="fas fa-location-dot"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-accent text-lg mb-1">Ubicación</h4>
-                    <p class="text-gray-700 font-medium">Guadalupe, N.L.</p>
-                    <p class="text-sm text-gray-600">Atención presencial</p>
-                </div>
-            </div>
-
-            <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
-                <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center text-xl flex-shrink-0">
-                    <i class="fas fa-brain"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-accent text-lg mb-1">Enfoque</h4>
-                    <p class="text-gray-700 font-medium">Terapia Breve Sistémica</p>
-                    <p class="text-sm text-gray-600">Centrada en soluciones, Tanatología y Psicofarmacología</p>
-                </div>
-            </div>
-
-            <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
-                <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center text-xl flex-shrink-0">
-                    <i class="fas fa-heart-pulse"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-accent text-lg mb-1">Experiencia</h4>
-                    <p class="text-gray-700 font-medium">Atención Especializada</p>
-                    <p class="text-sm text-gray-600">Terapia en centro de ayuda para menores</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-    <!-- areas -->
-    <section id="areas" class="py-20 bg-cream">
-    <div class="container mx-auto px-4">
-        <!-- Encabezado -->
-        <div class="text-center max-w-3xl mx-auto mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">
-                Mis <span class="text-primary">Áreas de Especialización</span>
-            </h2>
-            <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
-            <p class="text-gray-700 text-lg">
-                Espacios de acompañamiento terapéutico especializados para el bienestar emocional e integral.
-            </p>
-        </div>
-        
-        <!-- Grid de Tarjetas de Especialización -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            
-            <!-- Duelo y Pérdida -->
-            <div class="skill-card bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-accent">
-                        <i class="fas fa-hand-holding-heart text-2xl"></i>
-                    </div>
-                    <h4 class="font-bold text-xl mb-3 text-accent">Duelo y Pérdida</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Acompañamiento tanatológico en procesos de duelo, pérdidas significativas y transiciones de vida.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Orientación Familiar -->
-            <div class="skill-card bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-accent">
-                        <i class="fas fa-people-roof text-2xl"></i>
-                    </div>
-                    <h4 class="font-bold text-xl mb-3 text-accent">Orientación Familiar</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Orientación a padres, dinámicas familiares y estrategias efectivas para la crianza consciente.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Regulación Emocional -->
-            <div class="skill-card bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-accent">
-                        <i class="fas fa-spa text-2xl"></i>
-                    </div>
-                    <h4 class="font-bold text-xl mb-3 text-accent">Regulación Emocional</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Manejo de ansiedad, estado de ánimo, regulación de emociones y conductas autolesivas.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Vulnerabilidad y Apoyo -->
-            <div class="skill-card bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-accent">
-                        <i class="fas fa-shield-heart text-2xl"></i>
-                    </div>
-                    <h4 class="font-bold text-xl mb-3 text-accent">Vulnerabilidad Psicosocial</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        Intervención y apoyo integral en situaciones de violencia, acoso y contención en crisis.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-    <!-- Sección Atención -->
-<section id="atencion" class="py-20 bg-cream">
-    <div class="container mx-auto px-4">
-        <!-- Encabezado Centrado -->
-        <div class="text-center max-w-3xl mx-auto mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">
-                Modalidades de <span class="text-primary">Atención</span>
-            </h2>
-            <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
-            <p class="text-gray-700 text-lg">
-                Procesos terapéuticos adaptados a cada etapa de la vida en un entorno cálido, confidencial y seguro.
-            </p>
-        </div>
-
-        <!-- Tarjetas de Atención -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            
-            <!-- Atención Familiar / Niños y Adolescentes -->
-            <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full pointer-events-none"></div>
-                <div>
-                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-accent text-3xl">
-                        <i class="fas fa-child-reaching"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-accent mb-3">
-                        Atención Psicológica Familiar
-                    </h3>
-                    <div class="inline-block bg-primary/10 text-accent font-semibold px-3 py-1 rounded-full text-sm mb-4">
-                        Niñas, Niños y Adolescentes
-                    </div>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Acompañamiento especializado en el desarrollo emocional infanto-juvenil, trabajando de la mano con la familia para fortalecer dinámicas, conducta y bienestar integral.
-                    </p>
-                </div>
-                <div class="flex items-center text-sm font-semibold text-accent">
-                    <i class="fas fa-check-circle mr-2 text-primary"></i> Acompañamiento adaptado a cada etapa
-                </div>
-            </div>
-
-            <!-- Atención Individual / Mujeres y Jóvenes Adultos -->
-            <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full pointer-events-none"></div>
-                <div>
-                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-accent text-3xl">
-                        <i class="fas fa-user-nurse"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-accent mb-3">
-                        Atención Psicológica Individual
-                    </h3>
-                    <div class="inline-block bg-primary/10 text-accent font-semibold px-3 py-1 rounded-full text-sm mb-4">
-                        Jóvenes Adultos (18–30 años) y Mujeres Adultas
-                    </div>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Espacio terapéutico enfocado en el autoconocimiento, gestión de emociones, momentos de transición, ansiedad y resolución de conflictos personales o laborales.
-                    </p>
-                </div>
-                <div class="flex items-center text-sm font-semibold text-accent">
-                    <i class="fas fa-check-circle mr-2 text-primary"></i> Enfoque centrado en soluciones
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Formación Profesional -->
-<section id="formacion" class="py-20 bg-cream">
-    <div class="container mx-auto px-4">
-        <!-- Encabezado Centrado -->
-        <div class="text-center max-w-3xl mx-auto mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">
-                Mi <span class="text-primary">Formación Profesional</span>
-            </h2>
-            <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
-            <p class="text-gray-700 text-lg">
-                Diplomados, cursos y actualizaciones continuas para brindar una atención terapéutica especializada y de calidad.
-            </p>
-        </div>
-
-        <!-- ÚNICO Grid de Tarjetas (envuelve a las 4) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-
-            <!-- Tarjeta 1 -->
-            <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center space-x-4 mb-6">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold text-primary tracking-wider uppercase">Diplomado</span>
-                            <h3 class="font-bold text-xl text-accent">Tanatología</h3>
-                        </div>
-                    </div>
-
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        Formación enfocada en el acompañamiento de personas y familias ante procesos de duelo, pérdida y muerte, considerando sus dimensiones emocionales, familiares y sociales.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Tanatología</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Psicología Clínica</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Especialización</span>
-                    </div>
-                </div>
-
-                <div class="pt-4 border-t border-accent/10">
-                    <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
-                        <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">ILEP</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Tarjeta Nueva -->
-            <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <!-- Encabezado con Icono y Tipo -->
-                    <div class="flex items-center space-x-4 mb-6">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold text-primary tracking-wider uppercase">Diplomado</span>
-                            <h3 class="font-bold text-xl text-accent">Psicofarmacología Clínica</h3>
-                        </div>
-                    </div>
-
-                    <!-- Descripción -->
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        Formación orientada al conocimiento de los principales psicofármacos, sus efectos, indicaciones y consideraciones relevantes para la comprensión integral de los procesos de salud mental.
-                    </p>
-
-                    <!-- Etiquetas / Tags -->
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Intervención psicológica</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Medicación psiquiátrica</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Trastornos mentales</span>
-                    </div>
-                </div>
-
-                <!-- Footer (Institución) -->
-                <div class="pt-4 border-t border-accent/10">
-                    <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
-                        <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">INCUATRO</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tarjeta 2 -->
-            <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center space-x-4 mb-6">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold text-primary tracking-wider uppercase">Constancia</span>
-                            <h3 class="font-bold text-xl text-accent">Atención Integral a Menores Víctimas del Delito y en Situación de Vulnerabilidad</h3>
-                        </div>
-                    </div>
-
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        Formación enfocada en la atención integral de niñas, niños y adolescentes en contextos de vulnerabilidad, considerando la protección de sus derechos, el impacto de la violencia y las estrategias de intervención y acompañamiento.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Niñez y adolescencia</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Protección de derechos</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Vulnerabilidad psicosocial</span>
-                    </div>
-                </div>
-
-                <div class="pt-4 border-t border-accent/10">
-                    <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
-                        <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Secretaría de salud</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tarjeta 3 -->
-            <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center space-x-4 mb-6">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold text-primary tracking-wider uppercase">Constancia</span>
-                            <h3 class="font-bold text-xl text-accent">Prevención y Derivación ante el Abuso Sexual</h3>
-                        </div>
-                    </div>
-
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        Formación enfocada en la prevención, detección y canalización oportuna de casos de abuso sexual infantil, desde un enfoque de protección de derechos y atención integral.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Prevención</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Niñez y adolescencia</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Canalización y atención integral</span>
-                    </div>
-                </div>
-
-                <div class="pt-4 border-t border-accent/10">
-                    <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
-                        <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Secretaría de salud</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tarjeta 4 -->
-            <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center space-x-4 mb-6">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold text-primary tracking-wider uppercase">Constancia</span>
-                            <h3 class="font-bold text-xl text-accent">Prevención, Protección y Derivación de menores ante las Autolesiones, Ideación y Conducta Suicida</h3>
-                        </div>
-                    </div>
-
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        Formación enfocada en la prevención, identificación y canalización oportuna ante situaciones de autolesión, ideación y conducta suicida, desde un enfoque de protección de derechos y atención integral.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Prevención</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Conducta suicida</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Atención integral</span>
-                    </div>
-                </div>
-
-                <div class="pt-4 border-t border-accent/10">
-                    <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
-                        <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Secretaría de salud</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta Nueva -->
-            <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <!-- Encabezado con Icono y Tipo -->
-                    <div class="flex items-center space-x-4 mb-6">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold text-primary tracking-wider uppercase">Constancia</span>
-                            <h3 class="font-bold text-xl text-accent">Prevención, Protección y Derivación de menores ante el Acoso Escolar - Bullying</h3>
-                        </div>
-                    </div>
-
-                    <!-- Descripción -->
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        Formación enfocada en la prevención, identificación y canalización oportuna de situaciones de acoso escolar, desde un enfoque de protección de derechos y atención integral.
-                    </p>
-
-                    <!-- Etiquetas / Tags -->
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Detección oportuna</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Intervención</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Atención integral</span>
-                    </div>
-                </div>
-
-                <!-- Footer (Institución) -->
-                <div class="pt-4 border-t border-accent/10">
-                    <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
-                        <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Secretaria de la Salud</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta Nueva -->
-            <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <!-- Encabezado con Icono y Tipo -->
-                    <div class="flex items-center space-x-4 mb-6">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold text-primary tracking-wider uppercase">Constancia</span>
-                            <h3 class="font-bold text-xl text-accent">Salud Mental y Trastornos Psiquiátricos en la Infancia y Adolescencia</h3>
-                        </div>
-                    </div>
-
-                    <!-- Descripción -->
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        Formación orientada al conocimiento de la salud mental y los principales trastornos psiquiátricos durante la infancia y adolescencia, considerando su identificación, características y abordaje integral.
-                    </p>
-
-                    <!-- Etiquetas / Tags -->
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Detección oportuna</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Intervención</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Trabajo interdisciplinario</span>
-                    </div>
-                </div>
-
-                <!-- Footer (Institución) -->
-                <div class="pt-4 border-t border-accent/10">
-                    <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
-                        <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Secretaria de salud</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta Nueva -->
-            <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <!-- Encabezado con Icono y Tipo -->
-                    <div class="flex items-center space-x-4 mb-6">
-                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold text-primary tracking-wider uppercase">Constancia</span>
-                            <h3 class="font-bold text-xl text-accent">Estrategias y Técnicas de Contención y Regulación Emocional</h3>
-                        </div>
-                    </div>
-
-                    <!-- Descripción -->
-                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                        Formación enfocada en el conocimiento y aplicación de estrategias para favorecer la contención, regulación y manejo adecuado de las emociones en diferentes contextos de intervención.
-                    </p>
-
-                    <!-- Etiquetas / Tags -->
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Intervención psicológica</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Manejo de crisis</span>
-                        <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Psicoeducación</span>
-                    </div>
-                </div>
-
-                <!-- Footer (Institución) -->
-                <div class="pt-4 border-t border-accent/10">
-                    <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
-                        <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Secretaria de salud</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- Fin del grid -->
-    </div>
-</section>
-
-    <!-- Sección de Contacto -->
-<section id="contacto" class="py-20 bg-cream">
-    <div class="container mx-auto px-4 max-w-5xl">
-        
-        <!-- Recuadro Principal en color Accent -->
-        <div class="bg-accent text-cream rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden border border-accent/20">
-            
-            <!-- Encabezado de la Sección -->
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-3 text-cream">
-                    Contacto y <span class="text-primary">Atención</span>
+    <section id="sobre-mi" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">
+                    Sobre <span class="text-primary">Mí</span>
                 </h2>
-                <div class="w-16 h-1 bg-primary mx-auto rounded-full mb-4"></div>
-                <p class="text-cream/80 text-sm md:text-base max-w-lg mx-auto">
-                    Ponte en contacto para agendar una consulta o resolver cualquier duda sobre el proceso terapéutico.
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                    Psicóloga Clínica con Diplomado en Tanatología
+                </h3>
+                <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                    Acompaño a mis pacientes en sus procesos de cambio y superación de duelos, ofreciendo un espacio seguro, empático y libre de juicios.
+                </p>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    Mi trabajo se enfoca en identificar fortalezas y generar herramientas prácticas que permitan encontrar soluciones efectivas en el menor tiempo posible.
                 </p>
             </div>
 
-            <!-- Grid de Información de Contacto -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                
-                <!-- Ubicación -->
-                <div class="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-5 rounded-2xl border border-white/10 hover:bg-white/15 transition duration-300">
-                    <div class="w-12 h-12 bg-cream text-accent rounded-xl flex items-center justify-center text-xl flex-shrink-0 shadow-md">
-                        <i class="fas fa-map-marker-alt"></i>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fas fa-user-graduate"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-cream text-base mb-1">Ubicación</h3>
-                        <p class="text-cream/80 text-sm leading-snug">
-                            Av Pablo Livas, 3144. Camino real
-                        </p>
+                        <h4 class="font-bold text-accent text-lg mb-1">Educación</h4>
+                        <p class="text-gray-700 font-medium">Licenciada en Psicología</p>
+                        <p class="text-sm text-gray-600">CEU • 2017 – 2020</p>
                     </div>
                 </div>
 
-                <!-- Horario de Atención -->
-                <div class="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-5 rounded-2xl border border-white/10 hover:bg-white/15 transition duration-300">
-                    <div class="w-12 h-12 bg-cream text-accent rounded-xl flex items-center justify-center text-xl flex-shrink-0 shadow-md">
-                        <i class="fas fa-clock"></i>
+                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fas fa-location-dot"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-cream text-base mb-1">Horario</h3>
-                        <p class="text-cream/80 text-sm leading-snug">
-                            Lunes a Sábado (Domingo Costo Extra) <br>
-                        </p>
+                        <h4 class="font-bold text-accent text-lg mb-1">Ubicación</h4>
+                        <p class="text-gray-700 font-medium">Guadalupe, N.L.</p>
+                        <p class="text-sm text-gray-600">Atención presencial</p>
                     </div>
                 </div>
 
-                <!-- WhatsApp / Directo -->
-                <div class="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-5 rounded-2xl border border-white/10 hover:bg-white/15 transition duration-300">
-                    <div class="w-12 h-12 bg-cream text-accent rounded-xl flex items-center justify-center text-xl flex-shrink-0 shadow-md">
-                        <i class="fab fa-whatsapp"></i>
+                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fas fa-brain"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-cream text-base mb-1">WhatsApp</h3>
-                        <a href="https://wa.me/528181234567" target="_blank" class="text-cream/80 text-sm hover:text-primary transition font-medium">
-                            +52 81 1027 2199
-                        </a>
+                        <h4 class="font-bold text-accent text-lg mb-1">Enfoque</h4>
+                        <p class="text-gray-700 font-medium">Terapia Breve Sistémica</p>
+                        <p class="text-sm text-gray-600">Centrada en soluciones, Tanatología y Psicofarmacología</p>
                     </div>
                 </div>
 
-            </div>
-
-            <!-- Divisor sutil -->
-            <div class="border-t border-cream/20 pt-8 text-center">
-                <p class="text-cream/90 font-medium mb-6 text-sm tracking-wider uppercase">
-                    Sígueme en redes sociales
-                </p>
-
-                <!-- Botones de Redes Sociales -->
-                <div class="flex flex-wrap justify-center items-center gap-4">
-                    <!-- WhatsApp Directo -->
-                    <a href="https://wa.me/528110272199" target="_blank" aria-label="WhatsApp" class="w-12 h-12 bg-cream/10 hover:bg-cream hover:text-accent text-cream rounded-2xl flex items-center justify-center text-2xl transition-all duration-300 border border-cream/20 shadow-sm transform hover:-translate-y-1">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/psicvanessagtzc" target="_blank" aria-label="Facebook" class="w-12 h-12 bg-cream/10 hover:bg-cream hover:text-accent text-cream rounded-2xl flex items-center justify-center text-2xl transition-all duration-300 border border-cream/20 shadow-sm transform hover:-translate-y-1">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/psico.vanessagtz/" target="_blank" aria-label="Instagram" class="w-12 h-12 bg-cream/10 hover:bg-cream hover:text-accent text-cream rounded-2xl flex items-center justify-center text-2xl transition-all duration-300 border border-cream/20 shadow-sm transform hover:-translate-y-1">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-
-                    <!-- TikTok -->
-                    <a href="https://www.tiktok.com/@psic.vanessagtzc?lang=es-419" target="_blank" aria-label="TikTok" class="w-12 h-12 bg-cream/10 hover:bg-cream hover:text-accent text-cream rounded-2xl flex items-center justify-center text-2xl transition-all duration-300 border border-cream/20 shadow-sm transform hover:-translate-y-1">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
+                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-accent text-lg mb-1">Experiencia</h4>
+                        <p class="text-gray-700 font-medium">Atención Especializada</p>
+                        <p class="text-sm text-gray-600">Terapia en centro de ayuda para menores</p>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
-        <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+    </section>
 
-        if (menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
+    <!-- Áreas -->
+    <section id="areas" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">
+                    Mis <span class="text-primary">Áreas de Especialización</span>
+                </h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-700 text-lg">
+                    Espacios de acompañamiento terapéutico especializados para el bienestar emocional e integral.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <div class="skill-card bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-accent">
+                            <i class="fas fa-hand-holding-heart text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-3 text-accent">Duelo y Pérdida</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Acompañamiento tanatológico en procesos de duelo, pérdidas significativas y transiciones de vida.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-accent">
+                            <i class="fas fa-people-roof text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-3 text-accent">Orientación Familiar</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Orientación a padres, dinámicas familiares y estrategias efectivas para la crianza consciente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-accent">
+                            <i class="fas fa-spa text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-3 text-accent">Regulación Emocional</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Manejo de ansiedad, estado de ánimo, regulación de emociones y conductas autolesivas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="skill-card bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-accent">
+                            <i class="fas fa-shield-heart text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-3 text-accent">Vulnerabilidad Psicosocial</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Intervención y apoyo integral en situaciones de violencia, acoso y contención en crisis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Atención -->
+    <section id="atencion" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">
+                    Modalidades de <span class="text-primary">Atención</span>
+                </h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-700 text-lg">
+                    Procesos terapéuticos adaptados a cada etapa de la vida en un entorno cálido, confidencial y seguro.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full pointer-events-none"></div>
+                    <div>
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-accent text-3xl">
+                            <i class="fas fa-child-reaching"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-accent mb-3">
+                            Atención Psicológica Familiar
+                        </h3>
+                        <div class="inline-block bg-primary/10 text-accent font-semibold px-3 py-1 rounded-full text-sm mb-4">
+                            Niñas, Niños y Adolescentes
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Acompañamiento especializado en el desarrollo emocional infanto-juvenil, trabajando de la mano con la familia para fortalecer dinámicas, conducta y bienestar integral.
+                        </p>
+                    </div>
+                    <div class="flex items-center text-sm font-semibold text-accent">
+                        <i class="fas fa-check-circle mr-2 text-primary"></i> Acompañamiento adaptado a cada etapa
+                    </div>
+                </div>
+
+                <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full pointer-events-none"></div>
+                    <div>
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-accent text-3xl">
+                            <i class="fas fa-user-nurse"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-accent mb-3">
+                            Atención Psicológica Individual
+                        </h3>
+                        <div class="inline-block bg-primary/10 text-accent font-semibold px-3 py-1 rounded-full text-sm mb-4">
+                            Jóvenes Adultos (18–30 años) y Mujeres Adultas
+                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Espacio terapéutico enfocado en el autoconocimiento, gestión de emociones, momentos de transición, ansiedad y resolución de conflictos personales o laborales.
+                        </p>
+                    </div>
+                    <div class="flex items-center text-sm font-semibold text-accent">
+                        <i class="fas fa-check-circle mr-2 text-primary"></i> Enfoque centrado en soluciones
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formación Profesional -->
+    <section id="formacion" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-accent mb-4">
+                    Mi <span class="text-primary">Formación Profesional</span>
+                </h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-700 text-lg">
+                    Diplomados, cursos y actualizaciones continuas para brindar una atención terapéutica especializada y de calidad.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-primary tracking-wider uppercase">Diplomado</span>
+                                <h3 class="font-bold text-xl text-accent">Tanatología</h3>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Formación enfocada en el acompañamiento de personas y familias ante procesos de duelo, pérdida y muerte, considerando sus dimensiones emocionales, familiares y sociales.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Tanatología</span>
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Psicología Clínica</span>
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Especialización</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-accent/10">
+                        <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
+                            <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">ILEP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-primary tracking-wider uppercase">Diplomado</span>
+                                <h3 class="font-bold text-xl text-accent">Psicofarmacología Clínica</h3>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Formación orientada al conocimiento de los principales psicofármacos, sus efectos, indicaciones y consideraciones relevantes para la comprensión integral de los procesos de salud mental.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Intervención psicológica</span>
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Medicación psiquiátrica</span>
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Trastornos mentales</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-accent/10">
+                        <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
+                            <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">INCUATRO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-primary tracking-wider uppercase">Constancia</span>
+                                <h3 class="font-bold text-xl text-accent">Atención Integral a Menores Víctimas del Delito y en Situación de Vulnerabilidad</h3>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Formación enfocada en la atención integral de niñas, niños y adolescentes en contextos de vulnerabilidad, considerando la protección de sus derechos, el impacto de la violencia y las estrategias de intervención y acompañamiento.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Niñez y adolescencia</span>
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Protección de derechos</span>
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Vulnerabilidad psicosocial</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-accent/10">
+                        <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
+                            <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Secretaría de salud</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-accent/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-accent text-2xl flex-shrink-0">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-primary tracking-wider uppercase">Constancia</span>
+                                <h3 class="font-bold text-xl text-accent">Prevención y Derivación ante el Abuso Sexual</h3>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Formación enfocada en la prevención, detección y canalización oportuna de casos de abuso sexual infantil, desde un enfoque de protección de derechos y atención integral.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Prevención</span>
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Niñez y adolescencia</span>
+                            <span class="bg-primary/10 text-accent px-3 py-1 rounded-full text-xs font-semibold">Canalización y atención integral</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-accent/10">
+                        <div class="flex items-center p-3 bg-cream/60 rounded-2xl border border-accent/10">
+                            <div class="bg-accent text-cream p-3 rounded-xl mr-3 flex items-center justify-center text-base">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Secretaría de salud</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script del Menú Móvil -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
         }
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const targetId = this.getAttribute('href');
-                
-                // Evita errores si el href es solo "#" o está vacío
-                if (!targetId || targetId === '#') return;
-
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    e.preventDefault();
-                    
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                }
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
             });
         });
-
-        // Animate elements when scrolling
-        const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.skill-card, .project-card');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.3;
-                
-                if (elementPosition < screenPosition) {
-                    element.classList.add('animate__animated', 'animate__fadeInUp');
-                }
-            });
-        };
-
-        window.addEventListener('scroll', animateOnScroll);
-        animateOnScroll(); // Trigger once on load
-    });
-</script>
+    </script>
+</body>
+</html>
