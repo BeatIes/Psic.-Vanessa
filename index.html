@@ -70,6 +70,10 @@
         text-align: center !important;
     }
 }
+        html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
     </style>
 </head>
 <body class="bg-cream text-gray-800 overflow-x-hidden w-full max-w-full min-h-screen flex flex-col justify-between">
@@ -109,37 +113,47 @@
     </header>
     
     <!-- Hero Section -->
-    <section id="inicio" class="gradient-bg text-white py-20 mt-16">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Psic. Vanessa Gutiérrez</h1>
-                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Psicóloga Clínica • Tanatóloga</h2>
-                <p class="text-lg mb-8 max-w-lg text-cream">Soy Vanessa Gutiérrez, Psicóloga Clínica y Tanatóloga, con formación en Psicología Clínica, Tanatología y Psicofarmacología. Mi trabajo se basa en la Terapia Breve Sistémica Centrada en Soluciones, enfocada en identificar recursos y alternativas para favorecer cambios significativos.
+<section id="inicio" class="gradient-bg text-white py-12 md:py-20 mt-16">
+    <div class="container mx-auto px-4 flex flex-row items-center gap-4 md:gap-8">
+        
+        <!-- Columna Izquierda: Texto -->
+        <div class="w-1/2 text-left">
+            <h1 class="text-xl sm:text-3xl md:text-5xl font-bold mb-2 md:mb-4">Psic. Vanessa Gutiérrez</h1>
+            <h2 class="text-sm sm:text-xl md:text-3xl font-semibold mb-3 md:mb-6 text-cream/90">Psicóloga Clínica • Tanatóloga</h2>
+            
+            <p class="text-xs sm:text-base md:text-lg mb-4 md:mb-8 text-cream leading-relaxed">
+                Soy Vanessa Gutiérrez, Psicóloga Clínica y Tanatóloga, con formación en Psicología Clínica, Tanatología y Psicofarmacología. Mi trabajo se basa en la Terapia Breve Sistémica Centrada en Soluciones, enfocada en identificar recursos y alternativas para favorecer cambios significativos.
+                <br><br>
+                Acompaño a personas y familias en procesos de duelo y pérdida, orientación familiar y crianza, violencia, acoso y vulnerabilidad psicosocial, así como en dificultades relacionadas con la ansiedad, el estado de ánimo, las conductas autolesivas y la regulación emocional.
+                <br><br>
+                Ofrezco un espacio seguro, respetuoso y libre de juicios, adaptado a las necesidades e historia de cada persona.
+            </p>
 
-Acompaño a personas y familias en procesos de duelo y pérdida, orientación familiar y crianza, violencia, acoso y vulnerabilidad psicosocial, así como en dificultades relacionadas con la ansiedad, el estado de ánimo, las conductas autolesivas y la regulación emocional.
-
-Ofrezco un espacio seguro, respetuoso y libre de juicios, adaptado a las necesidades e historia de cada persona.</p>
-                <div class="flex space-x-4">
-                    <a href="#contacto" class="bg-accent hover:bg-opacity-90 text-cream px-6 py-3 rounded-full font-medium transition shadow-lg">Contáctame</a>
-                    <a href="#areas" class="bg-cream text-accent hover:bg-opacity-90 px-6 py-3 rounded-full font-medium transition shadow-lg">Areas de especialización</a>
-                </div>
+            <!-- Botones -->
+            <div class="flex flex-wrap gap-2 md:gap-4">
+                <a href="#contacto" class="bg-accent hover:bg-opacity-90 text-cream px-3 py-2 sm:px-6 sm:py-3 text-xs sm:text-base rounded-full font-medium transition shadow-lg inline-block">Contáctame</a>
+                <a href="#areas" class="bg-cream text-accent hover:bg-opacity-90 px-3 py-2 sm:px-6 sm:py-3 text-xs sm:text-base rounded-full font-medium transition shadow-lg inline-block">Áreas de especialización</a>
             </div>
-            <div class="md:w-1/2 flex justify-center">
-                <div class="relative floating">
-                    <a href="abbie%20png.png">
-                        <img src="abbie jeje.png" alt="Vanessa - Psicóloga" class="rounded-lg shadow-2xl border-4 border-cream">
-                    </a>
-                    <div class="absolute -bottom-5 -right-5 bg-cream p-4 rounded-lg shadow-lg border border-accent/20">
-                        <div class="text-accent text-center">
-                            <p class="font-bold">Lic. Vanessa</p>
-                            <p class="text-sm">Psicóloga • Tanatóloga</p>
-                            <p class="text-sm">CDP. 13572832</p>
-                        </div>
+        </div>
+
+        <!-- Columna Derecha: Foto -->
+        <div class="w-1/2 flex justify-center">
+            <div class="relative floating w-full max-w-xs md:max-w-md">
+                <a href="abbie%20png.png">
+                    <img src="abbie jeje.png" alt="Vanessa - Psicóloga" class="w-full h-auto rounded-lg shadow-2xl border-2 md:border-4 border-cream object-cover">
+                </a>
+                <div class="absolute -bottom-3 -right-2 md:-bottom-5 md:-right-5 bg-cream p-2 md:p-4 rounded-lg shadow-lg border border-accent/20">
+                    <div class="text-accent text-center">
+                        <p class="font-bold text-xs md:text-base">Lic. Vanessa</p>
+                        <p class="text-[10px] md:text-sm">Psicóloga • Tanatóloga</p>
+                        <p class="text-[10px] md:text-sm">CDP. 13572832</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- Sobre Mí -->
     <section id="sobre-mi" class="py-20 bg-cream">
