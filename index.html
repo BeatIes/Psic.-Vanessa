@@ -65,10 +65,9 @@
             50% { transform: translateY(-10px); }
             100% { transform: translateY(0px); }
         }
-    </style>
+</style>
 </head>
-<body class="bg-cream text-gray-800">
-
+<body class="bg-cream text-gray-800 overflow-x-hidden w-full max-w-full">
     <!-- Header/Navbar -->
     <header class="sticky top-0 z-50 gradient-bg text-white shadow-lg">
         <div class="container mx-auto px-4 py-4">
@@ -560,29 +559,37 @@ Ofrezco un espacio seguro, respetuoso y libre de juicios, adaptado a las necesid
     </div>
 </section>
         <script>
-   // Mobile Menu Toggle
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
+    document.addEventListener('DOMContentLoaded', () => {
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
+                
+                // Evita errores si el href es solo "#" o está vacío
+                if (!targetId || targetId === '#') return;
+
                 const targetElement = document.querySelector(targetId);
                 
                 if (targetElement) {
+                    e.preventDefault();
+                    
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
                     
                     // Close mobile menu if open
-                    const mobileMenu = document.getElementById('mobile-menu');
-                    if (!mobileMenu.classList.contains('hidden')) {
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                     }
                 }
@@ -605,4 +612,5 @@ Ofrezco un espacio seguro, respetuoso y libre de juicios, adaptado a las necesid
 
         window.addEventListener('scroll', animateOnScroll);
         animateOnScroll(); // Trigger once on load
-        </script>
+    });
+</script>
