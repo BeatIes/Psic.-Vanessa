@@ -68,8 +68,8 @@
 </style>
 </head>
 <body class="bg-cream text-gray-800 overflow-x-hidden w-full max-w-full">
-    <!-- Header/Navbar -->
-    <header class="sticky top-0 z-50 gradient-bg text-white shadow-lg">
+    <!-- Header/Navbar Fijo -->
+    <header class="fixed top-0 left-0 w-full z-50 gradient-bg text-white shadow-lg">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2">
@@ -81,17 +81,18 @@
                 <nav class="hidden md:flex space-x-8">
                     <a href="#inicio" class="hover:text-cream/80 transition">Inicio</a>
                     <a href="#sobre-mi" class="hover:text-cream/80 transition">Sobre mí</a>
-                    <a href="#areas" class="hover:text-cream/80 transition">Areas de Especialización</a>
+                    <a href="#areas" class="hover:text-cream/80 transition">Áreas de Especialización</a>
                     <a href="#atencion" class="hover:text-cream/80 transition">Atención</a>
+                    <a href="#formacion" class="hover:text-cream/80 transition">Formación Profesional</a>
                     <a href="#contacto" class="hover:text-cream/80 transition">Contacto</a>
                 </nav>
-                <button class="md:hidden text-2xl" id="menu-btn">
+                <button class="md:hidden text-2xl focus:outline-none" id="menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
         
-       <!-- Mobile Menu -->
+        <!-- Mobile Menu -->
         <div class="md:hidden hidden gradient-bg w-full absolute left-0 top-full px-4 py-3 shadow-lg" id="mobile-menu">
             <a href="#inicio" class="block py-2 hover:text-cream/80 border-b border-white/10">Inicio</a>
             <a href="#sobre-mi" class="block py-2 hover:text-cream/80 border-b border-white/10">Sobre mí</a>
@@ -113,7 +114,8 @@
                 });
             </script>
         </div>
-        
+    </header>
+    
     <!-- Hero Section -->
     <section id="inicio" class="gradient-bg text-white py-20">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
@@ -379,7 +381,7 @@ Ofrezco un espacio seguro, respetuoso y libre de juicios, adaptado a las necesid
                         </div>
                         <div>
                             <span class="text-xs font-bold text-primary tracking-wider uppercase">Diplomado</span>
-                            <h3 class="font-bold text-xl text-accent">Diplomado en Tanatología</h3>
+                            <h3 class="font-bold text-xl text-accent">Tanatología</h3>
                         </div>
                     </div>
 
@@ -416,7 +418,7 @@ Ofrezco un espacio seguro, respetuoso y libre de juicios, adaptado a las necesid
                         </div>
                         <div>
                             <span class="text-xs font-bold text-primary tracking-wider uppercase">Diplomado</span>
-                            <h3 class="font-bold text-xl text-accent">Diplomado en Psicofarmacología Clínica</h3>
+                            <h3 class="font-bold text-xl text-accent">Psicofarmacología Clínica</h3>
                         </div>
                     </div>
 
